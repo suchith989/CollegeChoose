@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">College Choose</a>
+        <a href="#contact" class="right">Contact</a>
+        <a href="#about" class="right">About</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p>Start selecting your college easy way. Select your desired branch and we will provide you with top colleges that you can join into.</p>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="">Branch</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" id="ECE" name="BRANCH" value="ECE">
+                <label for="ECE">ECE</label>
+                <input type="radio" id="CSE" name="BRANCH" value="CSE">
+                <label for="CSE">CSE</label>
+                <input type="radio" id="MEC" name="BRANCH" value="MEC">
+                <label for="MEC">MEC</label>
+                <input type="radio" name="BRANCH" id="INF" value="INF">
+                <label for="INF">INF</label>
+                <input type="radio" name="BRANCH" id="EEE" value="EEE">
+                <label for="EEE">EEE</label>
+                <input type="radio" name="BRANCH" id="CIV" value="CIV">
+                <label for="CIV">CIV</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="">Caste</label>
+            </div>
+            <div class="col-75">
+                <input  type="radio" name="CASTE" id="OC" value="OC">
+                <label  for="OC">OC</label>
+                <input  type="radio" name="CASTE" id="BC_A" value="BC_A">
+                <label  for="BC_A">BC-A</label>
+                <input  type="radio" name="CASTE" id="BC_B" value="BC_B">
+                <label  for="BC_B">BC-B</label>
+                <input  type="radio" name="CASTE" id="BC_C" value="BC_C">
+                <label  for="BC_C">BC-C</label>
+                <input  type="radio" name="CASTE" id="BC_D" value="BC_D">
+                <label  for="BC_D">BC-D</label>
+                <input  type="radio" name="CASTE" id="BC_E" value="BC_E">
+                <label  for="BC_E">BC-E</label>
+                <input  type="radio" name="CASTE" id="SC" value="SC">
+                <label  for="SC">SC</label>
+                <input  type="radio" name="CASTE" id="ST" value="ST">
+                <label  for="ST">ST</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="">Gender</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" name="GENDER" id="BOYS" value="BOYS">
+                <label for="BOYS">Male</label>
+                <input type="radio" name="GENDER" id="GIRLS" value="GIRLS">
+                <label for="GIRLS">Female</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="RANK">Rank</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="RANK" >
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn" type="button" >Submit</button>
+        </div>
+    </div>
+    <div class="result">
+        <canvas id="myChart" width="200px" height="200px"></canvas>
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>
